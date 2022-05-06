@@ -20,6 +20,6 @@ WHEN I refresh the page
 THEN the saved events persist
 ```
 
-[Link to deployed application] ()
+[Link to deployed application] (https://tkhobbes43.github.io/my-work-day-scheduler/)
 
 ![screenshot of website] ()
