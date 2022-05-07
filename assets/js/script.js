@@ -2,6 +2,9 @@
 var date = moment().format('dddd, MMMM Do');
 $("#currentDay").text(date);
 
+var description = $(".description");
+var saveButton = $(".saveBtn");
+
 $(document).ready(function() {
     console.log("Ready!")
  
