@@ -44,11 +44,9 @@ $(document).ready(function() {
 
     // when you click the save button, this is function needed to save task
     function saveTasks () {
-        var currentTime = $(this).data("hour");
         var rowHour = $(this).siblings(".hour").text();
         var task = $(this).siblings(".description").val();
 
-        console.log(currentTime);
         console.log(rowHour);
         console.log(task);
         
