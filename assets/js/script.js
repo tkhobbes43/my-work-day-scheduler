@@ -17,16 +17,16 @@ $(document).ready(function() {
             $(this).addClass("present");
             $(this).removeClass("past");
             $(this).removeClass("future");    
-
-
+        } else if (timeBlock > currentHour) {
+            $(this).addClass("future");
+            $(this).removeClass("past");
+            $(this).removeClass("present");
+        } else {
+            $(this).addClass("past");
+            $(this).removeClass("present");
+            $(this).removeClass("future");
         }
-
-
-
-
-
-    })
-
+    });
 // need to be able to enter an even/task in each time block
 
 
