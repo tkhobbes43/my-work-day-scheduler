@@ -28,10 +28,11 @@ $(document).ready(function() {
         }
     });
 
-// when you click the save button, it gets saved in local storage
+// when you click the save button, this is function needed to save task
     function saveTasks () {
         var currentTime = $(this).data("hour");
         var rowHour = $(this).siblings(".hour").text();
+
         console.log(currentTime);
         console.log(rowHour);
         console.log(task);
