@@ -14,7 +14,9 @@ $(document).ready(function() {
         let timeBlock = parseInt($(this).attr("id"));
          // using conditional statement to determine if currentHour is in present, past, or future   
         if (timeBlock === currentHour) {
-                
+            $(this).addClass("present");
+            $(this).removeClass("past");
+            $(this).removeClass("future");    
 
 
         }
