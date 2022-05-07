@@ -4,6 +4,8 @@ $("#currentDay").text(date);
 
 var description = $(".description");
 var saveButton = $(".saveBtn");
+var currentHour = moment().hour();
+
 
 $(document).ready(function() {
     console.log("Ready!")
