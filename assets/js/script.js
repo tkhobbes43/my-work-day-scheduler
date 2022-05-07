@@ -27,10 +27,17 @@ $(document).ready(function() {
             $(this).removeClass("future");
         }
     });
-// need to be able to enter an even/task in each time block
-
 
 // when you click the save button, it gets saved in local storage
+    function saveTasks () {
+        var currentTime = $(this).data("hour");
+        var rowHour = $(this).siblings(".hour").text();
+    }
+
+    // need to be able to enter an even/task in each time block
+
+
+
 
 
 // when you refresh the page, the saved events persists
