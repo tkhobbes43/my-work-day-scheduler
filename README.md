@@ -22,4 +22,4 @@ THEN the saved events persist
 
 [Link to deployed application] (https://tkhobbes43.github.io/my-work-day-scheduler/)
 
-![screenshot of website] (assets/Capture.PNG)
+![screenshot of website](assets/images/Capture.PNG)
