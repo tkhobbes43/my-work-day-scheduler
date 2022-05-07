@@ -60,7 +60,4 @@ $(document).ready(function() {
     }
 
     saveButton.on("click", saveTasks);
-// when you refresh the page, the saved events persists
-
 });
-
