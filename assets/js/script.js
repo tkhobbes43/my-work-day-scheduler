@@ -44,7 +44,7 @@ $(document).ready(function() {
         }
     }
 
-    saveButton.on("click", saveTasks);
+    
 // going to use .each function in order to populate tasks entered that have been saved in local storage to appropriate row once browser is loaded
     description.each(function() {
         for (let i = 0; i < localStorage.length; i++) {
@@ -69,3 +69,5 @@ $(document).ready(function() {
 
 
 });
+
+saveButton.on("click", saveTasks);
