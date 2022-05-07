@@ -1,6 +1,6 @@
 # My-Work-Day-Scheduler
 
-I want to create a simple calendar application that allows a user to save events for each hour of the day.  This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+I want to create a simple calendar application that allows a user to save events for each hour of the day.  This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery and Moment.js.  The started code also includes Bootstrap, Fontawesome, and Google Fonts.  This is app is a great example because it combines a combination of almost everything we have learned so far in class.
 
 ## Acceptance Criteria
 
@@ -22,4 +22,4 @@ THEN the saved events persist
 
 [Link to deployed application] (https://tkhobbes43.github.io/my-work-day-scheduler/)
 
-![screenshot of website] ()
+![screenshot of website] (assets/Capture.PNG)
