@@ -45,8 +45,18 @@ $(document).ready(function() {
     }
 
     saveButton.on("click", saveTasks);
-    // need to be able to enter an even/task in each time block
+// going to use .each function in order to populate tasks entered that have been saved in local storage to appropriate row once browser is loaded
+    description.each(function() {
+        for (let i = 0; i < localStorage.length; i++) {
+            let objectKey = localStorage.key(i);
+            let taskValue = localStorage.getItem(objectKey);
+            let rowHour = $(this).siblings(".hour").text();
+            if (objectKey === rowHour) {
+                $(this).val(taskValue);
+            }
+        }
 
+    })
 
 
 
