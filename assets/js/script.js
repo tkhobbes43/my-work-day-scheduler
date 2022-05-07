@@ -46,6 +46,7 @@ $(document).ready(function() {
     function saveTasks () {
         var currentTime = $(this).data("hour");
         var rowHour = $(this).siblings(".hour").text();
+        var task = $(this).siblings(".description").val();
 
         console.log(currentTime);
         console.log(rowHour);
@@ -60,11 +61,6 @@ $(document).ready(function() {
 
     saveButton.on("click", saveTasks);
 // when you refresh the page, the saved events persists
-
-
-
-
-
 
 });
 
