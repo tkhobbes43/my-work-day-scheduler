@@ -27,8 +27,22 @@ $(document).ready(function() {
             $(this).removeClass("future");
         }
     });
+    
+// going to use .each function in order to populate tasks entered that have been saved in local storage to appropriate row once browser is loaded
+    description.each(function() {
+        for (let i = 0; i < localStorage.length; i++) {
+            let objectKey = localStorage.key(i);
+            let taskValue = localStorage.getItem(objectKey);
+            let rowHour = $(this).siblings(".hour").text();
+        
+            if (objectKey === rowHour) {
+                $(this).val(taskValue);
+            }
+        }
 
-// when you click the save button, this is function needed to save task
+    })
+
+    // when you click the save button, this is function needed to save task
     function saveTasks () {
         var currentTime = $(this).data("hour");
         var rowHour = $(this).siblings(".hour").text();
@@ -44,31 +58,7 @@ $(document).ready(function() {
         }
     }
 
-    
-// going to use .each function in order to populate tasks entered that have been saved in local storage to appropriate row once browser is loaded
-    description.each(function() {
-        for (let i = 0; i < localStorage.length; i++) {
-            let objectKey = localStorage.key(i);
-            let taskValue = localStorage.getItem(objectKey);
-            let rowHour = $(this).siblings(".hour").text();
-
-            console.log(rowHour);
-            console.log(typeof rowHour);
-            console.log(objectKey);
-            console.log(typeof objectKey);
-            console.log(taskValue);
-            console.log(typeof taskValue);
-
-            if (objectKey === rowHour) {
-                $(this).val(taskValue);
-            }
-        }
-
-    })
-
-
-
-
+    saveButton.on("click", saveTasks);
 // when you refresh the page, the saved events persists
 
 
@@ -78,4 +68,3 @@ $(document).ready(function() {
 
 });
 
-saveButton.on("click", saveTasks);
