@@ -32,8 +32,18 @@ $(document).ready(function() {
     function saveTasks () {
         var currentTime = $(this).data("hour");
         var rowHour = $(this).siblings(".hour").text();
+        console.log(currentTime);
+        console.log(rowHour);
+        console.log(task);
+        
+        if (task ==="") {
+            localStorage.setItem(rowHour, "");
+        } else {
+            localStorage.setItem(rowHour, task);
+        }
     }
 
+    saveButton.on("click", saveTasks);
     // need to be able to enter an even/task in each time block
 
 
