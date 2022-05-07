@@ -51,6 +51,14 @@ $(document).ready(function() {
             let objectKey = localStorage.key(i);
             let taskValue = localStorage.getItem(objectKey);
             let rowHour = $(this).siblings(".hour").text();
+
+            console.log(rowHour);
+            console.log(typeof rowHour);
+            console.log(objectKey);
+            console.log(typeof objectKey);
+            console.log(taskValue);
+            console.log(typeof taskValue);
+
             if (objectKey === rowHour) {
                 $(this).val(taskValue);
             }
